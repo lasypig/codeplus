@@ -19,7 +19,7 @@ typedef struct {
 } rect_t;
 ```
 
-Move your pointer to a line like this:
+If you move your cursor to a line like this:
 
 ```c
 struct rect_t rect;
