@@ -9,7 +9,7 @@ Copy codeplus.vim to your vim plugin directory:
 `cp codeplus.vim ~/.vim/plugin`
 
 ## How to use?
-Assume you have a struct like this:
+Assume you have the following struct:
 ```c
 typedef struct {
 	int left;
@@ -25,7 +25,7 @@ Move your pointer to a line like this:
 struct rect_t rect;
 ```
 
-and press `<F7>`, I will generate some code like this for you:
+and press `<F7>`, I will generate following code for you:
 ```c
 rect.left   = ;
 rect.top    = ;
