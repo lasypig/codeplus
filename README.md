@@ -9,6 +9,15 @@ Copy codeplus.vim to your vim plugin directory:
 `cp codeplus.vim ~/.vim/plugin`
 
 ## How to use?
+Assume you have a struct like this:
+```c
+typedef struct {
+	int left;
+	int top;
+	int right;
+	int bottom;
+} rect_t;
+```
 
 Move your pointer to a line like this:
 
