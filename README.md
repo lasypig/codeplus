@@ -12,7 +12,9 @@ Copy codeplus.vim to your vim plugin directory:
 
 Move your pointer to a line like this:
 
-`struct rect_t rect;`
+```c
+struct rect_t rect;
+```
 
 and press `<F7>`, I will generate some code like this for you:
 ```c
@@ -25,7 +27,7 @@ If I could do nothing for you, I will show message bellow.
 
 ## Notice
 
-This plugin depends on tag files, run `ctags -R .` before using me.
+This plugin depends on tag files, plese run `ctags -R .` first.
 
 
 

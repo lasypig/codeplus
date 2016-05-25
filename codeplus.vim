@@ -15,11 +15,13 @@ endif
 let g:Li_CodeGen_Loaded = 1
 
 " The register used here
-if !has("clipboard")
-	let s:Li_ger = '"'
-else
-	let s:Li_ger = '*'
-endif
+"if !has("clipboard")
+"	let s:Li_ger = '"'
+"else
+"	let s:Li_ger = '*'
+"endif
+
+let s:Li_ger = 't'
 
 function! s:Li_Blank_Gen(len)
     if a:len < 1
@@ -342,7 +344,7 @@ function! Li_InitStruct_Plus()
     endfor
     call setreg(s:Li_ger, MuLi)
 	if getreg('%') =~ '\.c$'
-		exec 'normal "*p'
+		exec 'normal "' . s:Li_ger . 'p'
 	endif
 
 endfunction
