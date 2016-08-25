@@ -8,18 +8,17 @@ if &cp || exists('g:Li_CodeGen_Loaded')
 endif
 
 " This script is for C language
-if getreg('%') !~ '\.[hc]$'
+if &filetype != "c"
     finish
 endif
 
 let g:Li_CodeGen_Loaded = 1
 
-" The register used here
-"if !has("clipboard")
-"	let s:Li_ger = '"'
-"else
-"	let s:Li_ger = '*'
-"endif
+if !has("clipboard")
+	let s:Li_reg = '"'
+else
+	let s:Li_reg = '*'
+endif
 
 let s:Li_ger = 't'
 
@@ -125,7 +124,7 @@ function Li_InitStruct() range
     for m in member_var
         let MuLii .= s:Li_Blank_Gen(4) . varname . galf_pointer . m . s:Li_Blank_Gen(alnw - strlen(m)) . " = ;\n"
     endfor
-    call setreg(s:Li_ger, MuLii)
+    call setreg(s:Li_reg, MuLii)
 
 endfunction
 
