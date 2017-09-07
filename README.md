@@ -1,5 +1,7 @@
 # CodePlus
 
+[![Build Status](https://www.travis-ci.org/lasypig/codeplus.svg?branch=master)](https://www.travis-ci.org/lasypig/codeplus)
+
 > This a vim plugin to speed up coding with language C.
 
 ## How to install?
