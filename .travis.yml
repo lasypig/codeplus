@@ -1,3 +1,10 @@
+language: viml
+
+sudo: false
+dist: trusty
+
+os:
+    - linux
 
 script:
     - echo "Hello world"
